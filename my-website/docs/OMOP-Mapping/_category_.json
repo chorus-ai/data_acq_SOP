@@ -1,0 +1,8 @@
+{
+  "label": "OMOP Mapping ETLs",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to map your data to the OMOP CDM"
+  }
+}
