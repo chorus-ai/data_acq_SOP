@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/chorus-ai.png',
 
   // Set the production url of your site here
-  url: 'https://github.com/chorus-ai.io',
+  url: 'https://chorus-ai.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/data_acq_SOP/',
