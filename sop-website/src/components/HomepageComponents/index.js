@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: '1. Data Cohort Definition',
     url: 'img/projects.png',
-    link:'/data_acq_SOP/docs/category/omop-mapping',
+    link:'/data_acq_SOP/docs/category/data-cohort-definition',
     description: (
       <>
         Facilitate data interoperability by mapping data to the Observational Medical Outcomes Partnership (OMOP) Common Data Model.
@@ -17,7 +17,7 @@ const FeatureList = [
   {
     title: '2. OMOP Mapping',
     url: 'img/data_processing.png',
-    link:'/data_acq_SOP/docs/category/data-processing',
+    link:'/data_acq_SOP/docs/category/omop-mapping-etls',
     description: (
       <>
         Perform standardized data processing and data quality assessment.
