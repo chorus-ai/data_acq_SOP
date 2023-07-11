@@ -11,7 +11,7 @@ const config = {
   favicon: 'img/chorus-ai.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://github.com/chorus-ai/data_acq_SOP',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
