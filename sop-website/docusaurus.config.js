@@ -44,7 +44,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/chorus-ai/data_acq_SOP/edit/main/sop-website/docs',
+            'https://github.com/chorus-ai/data_acq_SOP/edit/main/sop-website/',
             // 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
@@ -56,7 +56,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-          'https://github.com/chorus-ai/data_acq_SOP/edit/main/sop-website/blog',
+          'https://github.com/chorus-ai/data_acq_SOP/edit/main/sop-website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
