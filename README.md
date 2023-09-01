@@ -1,5 +1,5 @@
 # Data_acq_SOP
-This repository is trying to organize all SOPs in aN elengant manner to help each site contribute to the data acqusition module smoothly.
+This repository is trying to organize all SOPs in an elengant manner to help each site contribute to the data acqusition module smoothly.
 The website is built with [Docusaurus](https://docusaurus.io/) and all contents are written with Markdown and MDX syntax.
 
 [**Online documentation SOP site**](https://chorus-ai.github.io/data_acq_SOP/). 
