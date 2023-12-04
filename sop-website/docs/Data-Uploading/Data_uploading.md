@@ -16,14 +16,20 @@ Sites will generate data that will need to merged in such a way that the end-use
 
 ## The centralized cloud environment
 
-This virtual linux server environment is hosted in an Azure platform. Connection parameters and authentication procedures are described here. The folder structure is setup such that each data generation site (DGS) can access their home folder (e.g. /CHoRUSDataRepository/yourDGS).
+This virtual environment is hosted in an Azure platform. The containers structure is setup such that each data generation site (DGS) can access their home folder (e.g. /CHoRUSDataContainers/yourDGS).
+
+
+<img width="1000" alt="containers" src="https://github.com/chorus-ai/data_acq_SOP/assets/2847495/d7d1d67a-2695-4b2d-92aa-2285b608a09d">
+
 
 ## Target folder structure
 
 Each DGS will be required to deposit data and metadata files in a dedicated centralized staging environment. This staging environment is a virtual linux server with read/write access for each DGS to their own home folders. The root folder should also contain an updated ReadMe file describing the contain to be found under each data folder and a running history of uploads. We have not planned to provide a template for the ReadMe file, but may do so as needed. Please refer to Figure 1 which depicts the folder structure to upload to.
-![foldertructure](./folderStructure.png)
 
-
+<span>
+<img width="600" alt="folders" src="https://github.com/chorus-ai/data_acq_SOP/blob/gh-pages/assets/images/folderStructure-4e6aaf02129bf76e6b459a69ce11d8fe.png">
+<img width="400" alt="folders" src="https://github.com/chorus-ai/data_acq_SOP/assets/2847495/2830b8bc-e661-415b-b605-933b1431a136"> 
+</span>
 
 ## Expectations as to file content
 
