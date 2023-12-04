@@ -32,7 +32,7 @@ It is expected that updates will be limited to the inclusion of new patient_id f
 
 ### The EHR folder
 
-This folder should include structured and unstructured 14 OMOP clinical data files as found here (https://ohdsi.github.io/CommonDataModel/cdm54.html#Clinical_Data_Tables). We are not requiring actual notes to be included in the "note_text" field of the NOTE table, but since working with the NOTE_NLP table would greatly benefit from access to foreign keys only present in the NOTE table. Thus the note table should at least contain core identifiers (note_id), descriptors (note_type_concept_id and note_class_concept_id) as well as there foreign keys to PERSON, VISIT_OCURRENCE, VISIT_DETAILS. Each of these table will be in the form of comma delimited files with header rows, with only the records pertaining to the person_id of interest. It will be a centralized responsibility to collate all patients from all sites into a queryable environment.
+This folder should include structured and unstructured 13 OMOP clinical data files(exluding specimen table) as found here (https://ohdsi.github.io/CommonDataModel/cdm54.html#Clinical_Data_Tables). We are not requiring actual notes to be included in the "note_text" field of the NOTE table, but since working with the NOTE_NLP table would greatly benefit from access to foreign keys only present in the NOTE table. Thus the note table should at least contain core identifiers (note_id), descriptors (note_type_concept_id and note_class_concept_id) as well as there foreign keys to PERSON, VISIT_OCURRENCE, VISIT_DETAILS. Each of these table will be in the form of comma delimited files with header rows, with only the records pertaining to the person_id of interest. It will be a centralized responsibility to collate all patients from all sites into a queryable environment.
 
 ### The Waveforms folder
 
@@ -40,4 +40,34 @@ According to usage described in the DA SOPs {links}, Waveform data refers to all
 
 This folder will include a single h5 file collating all waveform data, inclusive of its metadata, following the CCDEF hdf5 format described in the SOP {link}.
 
+Adjustments to the naming convention for clinical waveform data stored in this case in HDF5 format are made to include the duration in seconds and exclude the modality or type of waveform. The format is as follows:
+
+- **Patient Identification**: A unique person ID, typically a number or numeric digits from OMOP Person Table.
+- **Study Date**: The date when the waveform data was recorded, in the format `YYYYMMDD`.
+- **Start Time**: The start time of the recording, in `HHMMSS` format.
+- **Duration in Seconds**: The duration of the recording in seconds.
+
+#### Example File Name
+`PersonID_20230101_101530_3600.h5`
+
+This example represents a recording for PersonID on January 1, 2023, starting at 10:15:30, with a duration of 3600 seconds, and a unique identifier.
+
 ### The Images folder
+
+- **Patient Identification**: Typically includes a person ID.
+
+- **Study Date**: The date when the study was conducted, usually in the format `YYYYMMDD`.
+
+- **Study Time**: The time of the study, often in `HHMMSS` format.
+
+- **Modality**: Refers to the type of equipment used for the scan, such as MR (Magnetic Resonance), CT (Computed Tomography), or US (Ultrasound).
+
+- **Series Number**: Indicates the sequence of a particular series of images in a study.
+
+- **Instance Number**: Represents the specific image number within a series.
+
+#### Example of a DICOM Image Name
+`PersonID_20230101_101530_CT_01_001.dcm`
+
+This example would represent a CT scan for a patient, conducted on January 1, 2023, at 10:15:30. This image is the first in its series and the first in that series.
+
