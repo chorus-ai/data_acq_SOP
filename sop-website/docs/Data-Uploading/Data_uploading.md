@@ -24,13 +24,10 @@ Each DGS will be required to deposit data and metadata files in a dedicated cent
 ![foldertructure](./folderStructure.png)
 
 
-## Update mechanism
-
-It is expected that updates will be limited to the inclusion of new patient_id folders, as well as completion of data files in existing folders as these become more complete or updated following mandatory quality checks. For example, image files become available. These updates can be asynchronous with the expected yearly major uploads, but the ReadMe file must accurately reflect the content of the data folders (/EHR, /Waveforms and /Images)
 
 ## Expectations as to file content
 
-### The EHR folder
+### The OMOP EHR folder
 
 This folder should include structured and unstructured 13 OMOP clinical data files(exluding specimen table) as found here (https://ohdsi.github.io/CommonDataModel/cdm54.html#Clinical_Data_Tables). We are not requiring actual notes to be included in the "note_text" field of the NOTE table, but since working with the NOTE_NLP table would greatly benefit from access to foreign keys only present in the NOTE table. Thus the note table should at least contain core identifiers (note_id), descriptors (note_type_concept_id and note_class_concept_id) as well as there foreign keys to PERSON, VISIT_OCURRENCE, VISIT_DETAILS. Each of these table will be in the form of comma delimited files with header rows, with only the records pertaining to the person_id of interest. It will be a centralized responsibility to collate all patients from all sites into a queryable environment.
 
@@ -38,7 +35,7 @@ This folder should include structured and unstructured 13 OMOP clinical data fil
 
 According to usage described in the DA SOPs {links}, Waveform data refers to all data acquired from bedside monitors and devices, including alarms, numerics data obtain at regular of irregular intervals, and high-frequency (>1 Hz) waveform data such as digitized EKG tracings.
 
-This folder will include a single h5 file collating all waveform data, inclusive of its metadata, following the CCDEF hdf5 format described in the SOP {link}.
+This folder will include a single source(h5, wfdb, adibin) file collating all waveform data, inclusive of its metadata, in removed PHI form.
 
 Adjustments to the naming convention for clinical waveform data stored in this case in HDF5 format are made to include the duration in seconds and exclude the modality or type of waveform. The format is as follows:
 
@@ -71,3 +68,7 @@ This example represents a recording for PersonID on January 1, 2023, starting at
 
 This example would represent a CT scan for a patient, conducted on January 1, 2023, at 10:15:30. This image is the first in its series and the first in that series.
 
+
+## Update mechanism
+
+It is expected that updates will be limited to the inclusion of new patient_id folders, as well as completion of data files in existing folders as these become more complete or updated following mandatory quality checks. For example, image files become available. These updates can be asynchronous with the expected yearly major uploads, but the ReadMe file must accurately reflect the content of the data folders (/OMOP, /Waveforms and /Images)
