@@ -1,4 +1,4 @@
-# Upload data to Center Datawareohuse
+# Uploading to Central Data Warehouse
 
  [Download Data Uploading SOP doc](https://github.com/chorus-ai/data_acq_SOP/blob/main/sop-website/docs/Data-Uploading/Data%20Upload%20SOP.docx)
 
