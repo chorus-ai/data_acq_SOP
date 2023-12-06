@@ -54,7 +54,7 @@ Adjustments to the naming convention for clinical waveform data stored in this c
 #### Example File Name
 `PersonID_20230101_101530_3600.h5`
 
-This example represents a recording for PersonID on January 1, 2023, starting at 10:15:30, with a duration of 3600 seconds, and a unique identifier.
+This example represents a recording for PersonID on January 1, 2023, starting at 10:15:30, with a duration of 3600 seconds.
 
 ### The Images folder
 
