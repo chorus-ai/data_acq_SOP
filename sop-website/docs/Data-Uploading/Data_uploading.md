@@ -30,7 +30,10 @@ Each DGS will be required to deposit data and metadata files in a dedicated cent
 
 **Folder Architecture Details**
 
+
 <img width="500" alt="containers" src="https://github.com/chorus-ai/data_acq_SOP/blob/gh-pages/assets/images/folderStructureDetail-320f73d0c87abf8705bcdff0cd80df34.png" />
+
+
 ![Folder Architecture Details](./folderStructureDetail.png)
 
 ## Expectations as to file content
