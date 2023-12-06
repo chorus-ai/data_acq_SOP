@@ -26,7 +26,8 @@ This virtual environment is hosted in an Azure platform. The containers structur
 
 Each DGS will be required to deposit data and metadata files in a dedicated centralized staging environment. This staging environment is a virtual linux server with read/write access for each DGS to their own home folders. The root folder should also contain an updated ReadMe file describing the contain to be found under each data folder and a running history of uploads. We have not planned to provide a template for the ReadMe file, but may do so as needed. Please refer to Figure 1 which depicts the folder structure to upload to.
 
-![folder](./folderStructure.png)
+<img width="1000" alt="containers" src="https://github.com/chorus-ai/data_acq_SOP/assets/2847495/9ea5ef46-8e13-491a-a357-da41e995f84e" />
+
 
 **Folder Architecture Details**
 
