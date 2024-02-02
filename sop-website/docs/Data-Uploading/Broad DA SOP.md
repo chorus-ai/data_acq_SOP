@@ -1,8 +1,13 @@
-﻿
+﻿---
+title: Broad SOP for data preparation
+id: Broad SOP
+description:  A broad SOP for data uploading
+---
+
+
 # ChoRUS Broad Standard Operating Procedures for Data Contributing Sites
 
-
-### **Purpose**
+**Purpose**
 
 This document is for data contributing sites to better understand what is expected to fulfill contractual obligations and what assistance you can expect from each module. This document describes the types of activities leading to the production of harmonized structured and unstructured EHR data, Images, and Monitor data.
 
