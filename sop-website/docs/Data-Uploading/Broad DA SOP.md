@@ -19,7 +19,28 @@ Some sites have access to and existing repository, while other sites need to for
 
 - Formulate the specs of the data extraction
 
-The specification includes (i) a description of the population of patients , (ii) the scope of the extraction, which specifies what data is needed over what period of time. In the pilot phase (April-June 2023), the request is for data from hospital admission to hospital discharge. The time when these patients were admitted does not matter, not does their admitting diagnoses. We would prefer admission dates to be post-COVID.  For subsequent phases, the number of encounters to be contributed will be decided on a site-by-site basis. The specs also describe which data elements are needed. We require that sites provide all [Tier 1](https://partnershealthcare.sharepoint.com/:x:/r/sites/CHoRUSBridge2AI/Shared%20Documents/Module%205%20Data%20Acquisition/Data%20element%20Selection%20Delphi/Round%201/CHoRUS%20CDE%20Consensus_Round%202.xlsx?d=w353f26a658d146b4ba1f2b4cddd4ce2c&csf=1&web=1&e=RRnmko) data elements (“Flowsheet and Tier categories” sheet, column H), and encourage the contribution of Tier 2 or lower data elements whenever available. Table 1 provide a summary this list and how data elements should be assigned across OMOP tables. It is understood that not all data are available for the duration of the hospital admission. 
+The specification includes:
+
+(i) a description of the population of patients
+
+(ii) the scope of the extraction, which specifies what data is needed over what period of time.
+  
+In the pilot phase (April-June 2023), the request is for data from hospital admission to hospital discharge. The time when these patients were admitted does not matter, not does their admitting diagnoses. **We would prefer admission dates to be post-COVID.**  
+
+For subsequent phases, the number of encounters to be contributed will be decided on a site-by-site basis. The specs also describe which data elements are needed. We require that sites provide all [**Tier 1**](https://partnershealthcare.sharepoint.com/:x:/r/sites/CHoRUSBridge2AI/Shared%20Documents/Module%205%20Data%20Acquisition/Data%20element%20Selection%20Delphi/Round%201/CHoRUS%20CDE%20Consensus_Round%202.xlsx?d=w353f26a658d146b4ba1f2b4cddd4ce2c&csf=1&web=1&e=RRnmko) data elements (“Flowsheet and Tier categories” sheet, column H), and encourage the contribution of Tier 2 or lower data elements whenever available. 
+
+|EHR domain|Specific variables|OMOP clinical tables (CDM 5.4)|
+| :- | :- | :- |
+|Person|Age, Race, ethnicity, death (Y/N), death date, discharge destination, address|PERSON\_ID, DEATH|
+|Visit & location|Dates of all location changes, type of location |OBSERVATION\_PERIOD, VISIT\_OCCURENCE and VISIT\_DETAIL|
+|Measurements and assessments|Labs, vital signs, input/outputs, transfusions, other Tier 1 flow sheet elements|MEASUREMENT, OBSERVATIONS|
+|Diagnoses and problems|Admission diagnosis, Discharges diagnoses, |CONDITION\_OCCURENCE|
+|Procedures|X-rays, Dialysis, CRRT, EGD, EEG Bronchoscopies, Specific surgeries. Most of these will have a corresponding note/report)|PROCEDURE\_OCCURENCE|
+|Devices|Endotracheal tubes, central lines, pacemakers, EVD, etc.|DEVICE\_EXPOSURE|
+|Drugs|Instances of drug administration (as opposed to drug orders)|DRUG\_EXPOSURE|
+|Specimens|Cultures, pathology, cytology, etc|SPECIMEN|
+
+***Table 1 provide a summary this list and how data elements should be assigned across OMOP tables. It is understood that not all data are available for the duration of the hospital admission.***
 
 - Identify relevant metadata
 
@@ -42,18 +63,6 @@ Please develop a process to verify that each piece of data requested is included
 Please upload all data tables, and metadata files to your site-specific cloud enclave within the CHoRUS cloud environment. Full specifications of this process is included in the UPLOAD SOP. A link to this SOP is provided in the parent document.
 
 These steps are for guidance only. Yet they provide a map of the typical steps necessary to produce a quality data extraction. Your site process will have variations on those steps. A description of those variations should also accompany your extract, so CHoRUS fully understands the process at each site and is in the best possible position to help local teams.
-
-
-|EHR domain|Specific variables|OMOP clinical tables (CDM 5.4)|
-| :- | :- | :- |
-|Person|Age, Race, ethnicity, death (Y/N), death date, discharge destination, address|PERSON\_ID, DEATH|
-|Visit & location|Dates of all location changes, type of location |OBSERVATION\_PERIOD, VISIT\_OCCURENCE and VISIT\_DETAIL|
-|Measurements and assessments|Labs, vital signs, input/outputs, transfusions, other Tier 1 flow sheet elements|MEASUREMENT, OBSERVATIONS|
-|Diagnoses and problems|Admission diagnosis, Discharges diagnoses, |CONDITION\_OCCURENCE|
-|Procedures|X-rays, Dialysis, CRRT, EGD, EEG Bronchoscopies, Specific surgeries. Most of these will have a corresponding note/report)|PROCEDURE\_OCCURENCE|
-|Devices|Endotracheal tubes, central lines, pacemakers, EVD, etc.|DEVICE\_EXPOSURE|
-|Drugs|Instances of drug administration (as opposed to drug orders)|DRUG\_EXPOSURE|
-|Specimens|Cultures, pathology, cytology, etc|SPECIMEN|
 
 ## **Unstructured EHR data**
 
