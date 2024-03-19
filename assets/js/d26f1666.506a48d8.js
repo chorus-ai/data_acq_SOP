@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[758],{6770:e=>{e.exports=JSON.parse('{"permalink":"/data_acq_SOP/blog/tags/hello","page":1,"postsPerPage":6,"totalPages":1,"totalCount":1,"blogDescription":"Innovative ideas and discovers","blogTitle":"Innovative Ideas!"}')}}]);
