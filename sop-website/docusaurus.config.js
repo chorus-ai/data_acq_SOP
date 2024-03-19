@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Chorus-DataAcq-SOP',
-  tagline: 'Standard Operating Procedures for Data Acquisition',
+  title: 'ChoRUS-SOP',
+  tagline: 'Standard Operating Procedures for CHoRUS - Clinical Care AI',
   favicon: 'img/chorus-ai.png',
 
   // Set the production url of your site here
