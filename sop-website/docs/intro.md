@@ -6,7 +6,7 @@ sidebar_position: 1
 
 The online document is built up to provide an user-friendly SOP for CHoRUS Data Acquisiition module. 
 The SOP will provide detailed instructions in:
-* OMOP Mapping 
+* OMOP Mapping - 
 * Data Collection
 * Data Quality Assessment 
 * Data Serving
