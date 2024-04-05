@@ -18,8 +18,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Get Started!
+            to="https://chorus-ai.github.io/Chorus_SOP/">
+            Head to new site!
           </Link>
         </div>
       </div>

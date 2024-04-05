@@ -1,4 +1,9 @@
 # Data_acq_SOP
+
+> [!WARNING]  
+> This site and its contents have been migrated to the [Chorus_SOP repository](https://github.com/chorus-ai/Chorus_SOP)
+> The information found here may be stale.
+
 This repository is trying to organize all SOPs in an elengant manner to help each site contribute to the data acqusition module smoothly.
 The website is built with [Docusaurus](https://docusaurus.io/) and all contents are written with Markdown and MDX syntax.
 

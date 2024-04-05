@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'ChoRUS-SOP',
-  tagline: 'Standard Operating Procedures for CHoRUS - Clinical Care AI',
+  title: 'SITE MIGRATED',
+  tagline: 'This site and its contents have been migrated!',
   favicon: 'img/chorus-ai.png',
 
   // Set the production url of your site here
@@ -179,7 +179,7 @@ const config = {
       },
       announcementBar: {
         id: 'supportus', // Any value that will identify this message.
-        content: "😏 The document is in development... 🤟"
+        content: "This webpage is no longer active"
       },
       docs: {
         sidebar: {
