@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>SITE MIGRATED Blog</title>
+        <link>https://chorus-ai.io/data_acq_SOP/blog</link>
+        <description>SITE MIGRATED Blog</description>
+        <lastBuildDate>Wed, 28 Jun 2023 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://chorus-ai.io/data_acq_SOP/blog/welcome</link>
+            <guid>https://chorus-ai.io/data_acq_SOP/blog/welcome</guid>
+            <pubDate>Wed, 28 Jun 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hi This is the welcome from CHoRUS Data Acquisition Module!]]></description>
+            <content:encoded><![CDATA[<p>Hi This is the welcome from CHoRUS Data Acquisition Module!</p><p>We hope to build the online documentation to share our knowledge and experience.</p>]]></content:encoded>
+            <category>hello</category>
+            <category>docusaurus</category>
+        </item>
+    </channel>
+</rss>
