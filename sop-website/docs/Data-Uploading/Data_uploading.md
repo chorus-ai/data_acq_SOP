@@ -74,7 +74,7 @@ This example represents a recording for PersonID on January 1, 2023, starting at
 #### Example of a DICOM Image Name
 `PersonID_20230101_101530_CT_01_001.dcm`
 
-This example would represent a CT scan for a patient, conducted on January 1, 2023, at 10:15:30. This image is the first in its series and the first in that series.
+This example would represent a CT scan for a patient, conducted on January 1, 2023, at 10:15:30. This image is the first in its instances and the first in that series. Make sure instance and series match with dicom metadata. 
 
 
 ## Update mechanism
